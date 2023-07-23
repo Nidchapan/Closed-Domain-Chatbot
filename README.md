@@ -116,6 +116,13 @@ The model that is used for each task is as follows:
 
 <img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/c0020ea0fa4aac7e37e95a13c70521e946517722/image/the%20example%20of%20conversation%20between%20customer%20and%20our%20chatbot.png" width="500"/> 
 
+## Required Key
+
+1. OpenAI API (https://platform.openai.com/account/api-keys)
+2. Channel access tokens - LINE Developers
+3. Channel Secret - LINE Developers
+4. Webhook URL [get from code; after run flask application]
+
 ## Citation
 
 If you find this code useful for your research, please use the following BibTeX entry.
