@@ -1,0 +1,28 @@
+- Akiko Eriguchi, M. J. (2018). Zero-Shot Cross-lingual Classification Using Multilingual Neural Machine Translation. ArXiv, abs/1809.04686.
+- Diksha Khurana, A. K. (2023). Natural language processing: state of the art, current trends and challenges. Multimedia Tools and Applications, 3713–3744.
+- Farhad Pourpanah, M. A.-Z. (2023). A Review of Generalized Zero-Shot Learning Methods. IEEE Transactions on Pattern Analysis &amp; Machine Intelligence, 45(1939-3539), 4051-4070.
+- Haifeng Wang, J. L. (2022). Pre-Trained Language Models and Their Applications. Engineering, 25(6).
+- IBM. (n.d.). What is a chatbot? (IBM) Retrieved 6 8, 2023, from https://www.ibm.com/topics/chatbots
+- Jason Wei, K. Z. (2019). EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing. Hong Kong.
+- Javier Gamboa-Cruzado, C. M.-M.-G. (2023). USE OF CHATBOTS IN E-COMMERCE: A COMPREHENSIVE SYSTEMATIC REVIEW. Journal of Theoretical and Applied Information Technology, 101(4), 1172-1183.
+- Jindong Wang, X. H. (2023). On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective. ICLR 2023 Workshop on Trustworthy and Reliable Large-Scale Machine Learning.
+- Jörg Tiedemann, S. T. (2020). OPUS-MT – Building open translation services for the World. In Proceedings of the 22nd Annual Conference of the European Association for Machine Translation. Lisboa, Portugal.
+- Jun Gao, C. Y. (2022). Mask-then-Fill: A Flexible and Effective Data Augmentation Framework for Event Extraction. In Findings of the Association for Computational Linguistics: EMNLP 2022. Abu Dhabi.
+- Ketakee Nimavat, T. C. (2017). Chatbots: An overview. Types, Architecture, Tools and Future Possibilities. International Journal for Scientific Research & Development|, 5(7), 1019-1026.
+- Lalita Lowphansirikul, C. P. (2021). WANGCHANBERTA: PRETRAINING TRANSFORMER-BASED THAI LANGUAGE MODELS. arXiv(arXiv:2101.09635).
+- Mark Anthony Camilleri, C. T. (2023). Chatbot recommender systems in tourism: A systematic review and a benefit-cost analysis. 8th International Conference on Machine Learning Technologies. In Stockholm.
+- Matthew Henderson, I. V. (2021). ConVEx: Data-Efficient and Few-Shot Slot Labeling. Proceedings of the 2021 Conference of the North American Chapter of the. 
+- Mike Lewis, Y. L. (2020). BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. Online.
+- Moataz Mohammed, M. M. (2022). Chatbot System Architecture. arXiv(arXiv:2201.06348).
+- OpenAI. (n.d.). Models. (OpenAI) Retrieved 06 3, 2022, from https://platform.openai.com/docs/models
+- OpenAI. (n.d.). Pricing. (OpenAI) Retrieved 16 5, 2023, from https://openai.com/pricing
+- Rahul Barman, S. D. (2019). Transfer Learning for Small Dataset. Proceedings of National Conference on Machine Learning. Montreal Quebec.
+- Shengyu Gu, B. Ś. (2021). Impact of the COVID-19 Pandemic on Online Consumer Purchasing Behavior. Journal of Theoretical and Applied Electronic Commerce Research, 16(6), 2263-2281.
+- Shervin Minaee, N. K. (2021). Deep Learning Based Text Classification: A Comprehensive Review. ACM Computing Surveys, 54(3), 1–40.
+- Sinong Wang, M. K. (2020). To Pretrain or Not to Pretrain: Examining the Benefits of Pretrainng on Resource Rich Tasks. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, 2209–2213.
+- Stahlberg, F. (2020). Neural Machine Translation: A Review and Survey. Journal of Artificial Intelligence Research, 69, 343-418.
+- Tanakorn Limsarun, J. M. (2020). A Study of Customer Satisfaction and E-commerce Online Purchasing Service in China-Using Taobao and JD as the Examples to Compare and Analyse. NATIONAL AND INTERNATIONAL ACADEMIC CONFERENCE INNOVATION AND MANAGEMENT FOR SUSTAINABILITY. Bangkok.
+- Tarun Lalwani, S. B. (2018). Implementation of a Chatbot System using AI and NLP. International Journal of Innovative Research in Computer Science & Technology, 6(3), 26-30.
+- Xufei Huang, M. M. (2021). CHATBOT: DESIGN, ARCHITECUTRE, AND. University of Pennsylvania: School of Engineering and Applied Science.
+- Yang Ziyi, Y. Y. (2021). Universal Sentence Representation Learning with Conditional Masked Language Model. Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. Online and Punta Cana.
+- Yongqin Xian, B. S. (2017). Zero-Shot Learning - A Comprehensive Evaluation of the Good, the Bad and the Ugly. IEEE Conference on Computer Vision and Pattern Recognition. Honolulu.
