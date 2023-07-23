@@ -31,7 +31,7 @@ After reviewing the research, we decided on the model architecture shown in Figu
 Figure 2 The chatbot model architectures
 </p>
 
-### The example of slots labeling
+**The example of slots labeling**
 <p align="center">
 <img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/6b01b7b7b0afbcb48e2ddf270041a8dccb6d55ca/image/The%20example%20of%20slot%20labeling%20of%20product%20information%20class.png" width="600">
 </p>
@@ -40,15 +40,11 @@ Figure 3 The example of slots labeling of product information class
 </p>
 
 The model that is used for each task is as follows:
-1)	Cleaning Intent Text : pythainlp.util.normalize library for text normalization 
-(https://pythainlp.github.io/docs/2.0/_modules/pythainlp/util/normalize.html)
-  and pythainlp.corpus.thai_stopwords library + own dataset for removing the stopwords
-(https://pythainlp.github.io/docs/2.0/api/corpus.html)
-
-2)	Data Augmentation for Intent Classification : Pretraining transformer-based Thai Language Models: WangchanBERTa, trained on assorted Thai text dataset
-3)	Intent Classfication : Universal sentence encoder for Multilingual trained with conditional masked language: USE-CMLM
-4)	Translator or Slot Labeling Pre-processing : Machine Translator model trained on Open Source Parallel Corpus:Opus-MT
-5)	Slot Labeling : Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension: BART, trained on Multi-Genre Natural Language Inference dataset
-6)	Sentiment Analysis : Pretraining transformer-based Thai Language Models: WangchanBERTa, trained on wisesight-sentiment dataset
-7)	ChatGPT : Generative Pre-trained Transformer 3.5 Turbo: GPT-3.5-Turbo
+1)	**Cleaning Intent Text :** pythainlp.util.normalize library (https://pythainlp.github.io/docs/2.0/_modules/pythainlp/util/normalize.html) for text normalization and pythainlp.corpus.thai_stopwords library (https://pythainlp.github.io/docs/2.0/_modules/pythainlp/corpus/common.html#thai_stopwords) + own dataset for removing the stopwords
+2)	**Data Augmentation for Intent Classification :** Pretraining transformer-based Thai Language Models: WangchanBERTa, trained on assorted Thai text dataset by  PyThaiNLP (https://pythainlp.github.io/dev-docs/_modules/pythainlp/augment/lm/wangchanberta.html#Thai2transformersAug)
+3)	**Intent Classfication :** Universal sentence encoder for Multilingual trained with conditional masked language: USE-CMLM (https://tfhub.dev/google/universal-sentence-encoder-cmlm/multilingual-preprocess/2, https://tfhub.dev/google/universal-sentence-encoder-cmlm/multilingual-base/1)
+4)	**Translator or Slot Labeling Pre-processing :** Machine Translator model trained on Open Source Parallel Corpus:Opus-MT (https://huggingface.co/Helsinki-NLP/opus-mt-th-en)
+5)	**Slot Labeling :** Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension: BART, trained on Multi-Genre Natural Language Inference dataset (https://huggingface.co/facebook/bart-large-mnli)
+6)	**Sentiment Analysis :** Pretraining transformer-based Thai Language Models: WangchanBERTa (https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased), trained on wisesight-sentiment dataset (https://huggingface.co/datasets/wisesight_sentiment)
+7)	**ChatGPT :** Generative Pre-trained Transformer 3.5 Turbo: GPT-3.5-Turbo (https://platform.openai.com/docs/models)
 
