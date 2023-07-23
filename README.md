@@ -70,7 +70,9 @@ The model that is used for each task is as follows:
 
 <p align="center">
 **Figure 4** (a) F1 score of intent classification with no-data augmentation for 100 epochs,
-  
+</p>
+
+<p align="center">
 (b) F1 score of intent classification with data augmentation for 100 epochs
 </p>
   
