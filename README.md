@@ -121,7 +121,7 @@ The model that is used for each task is as follows:
 1. OpenAI API (https://platform.openai.com/account/api-keys)
 2. Channel access tokens - LINE Developers
 3. Channel Secret - LINE Developers
-4. Webhook URL [get from code; after run flask application]
+4. Webhook URL [get from code - after run flask application]
 
 ## Citation
 
