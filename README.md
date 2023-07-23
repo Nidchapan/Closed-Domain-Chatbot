@@ -1,3 +1,5 @@
+[![image](https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/2718327ea58cb48111922f2377da6f85983fcf31/image/open_in_colab.svg)](https://colab.research.google.com/github/Nidchapan/Closed-Domain-Chatbot/blob/main/Closed_Domain_Chatbot_for_Thai_Language.ipynb)
+
 # Closed Domain Chatbot for Thai Language
 
 we proposed to design the closed-domain or fashion e-commerce Thai chatbot framework for Line social media platform with deep learning models.
