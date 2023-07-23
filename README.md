@@ -64,12 +64,15 @@ The model that is used for each task is as follows:
 <img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/dd089111c172cc767fe7d95e50f79e7d12f90297/image/aug_train.png" width="400"/>
 </p>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a) no-augmentation&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(b) augmentation
+<p align="center">
+(a) no-augmentation&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(b) augmentation
 </p>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Figure 4** (a) F1 score of intent classification with no-data augmentation for 100 epochs, 
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(b) F1 score of intent classification with data augmentation for 100 epochs
+<p align="center">
+**Figure 4** (a) F1 score of intent classification with no-data augmentation for 100 epochs,
+  
+(b) F1 score of intent classification with data augmentation for 100 epochs
+</p>
   
 &emsp;&emsp;From the graphs presented, the performance of the intent classification model both with data augmentation and no-data augmentation, the F1 score of the training dataset performs well but poorly on the validation dataset or an overfitting issue occurs of both experiments when the epoch exceeds 40. Therefore, we choose the epoch of 40 to compare the results. However, the F1 score of the validation dataset trend of intent classification with data augmentation is higher than the result with no-data augmentation. Table 1 shows that both the accuracy and F1 score of the test dataset for the intent classification model with augmentation is higher than the experiment result with no-data augmentation. While the processing time of experiment results with no-augmentation is lower.
 
