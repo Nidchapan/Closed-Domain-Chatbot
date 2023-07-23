@@ -6,4 +6,4 @@ This study experiment includes
 2) the slot labeling model with the data pre-processing by translating the text into English and no data pre-processing.
 
 
-![alt text](https://drive.google.com/file/d/1lggZMKCaklUfCFIEyjjApXMuh5AvBUr8/view?usp=sharing)
+![alt text](https://github.com/Nidchapan/Closed-Domain-Chatbot/image/The chatbot system design for Line social media platform.png)
