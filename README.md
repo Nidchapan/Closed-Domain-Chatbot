@@ -16,28 +16,26 @@ This study experiment includes
 ## System Design
 &emsp;&emsp;The chatbot system design for Line social media platform is shown in Figure 1. Building a chatbot framework with Google Colaboratory - Python and web application with Flask as the backend framework. For message sending and receiving, using Ngrok for creating secure tunnels between the chatbot framework (local development) and the Line social media platforms (public internet).
 <p align="center">
-<img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/6cbf73b39c3085c76267df9eae07c9d5e576317c/image/The%20chatbot%20system%20design%20for%20Line%20social%20media%20platform.png" width="600">
+<img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/6cbf73b39c3085c76267df9eae07c9d5e576317c/image/The%20chatbot%20system%20design%20for%20Line%20social%20media%20platform.png" width="500">
 </p>
 <p align="center">
-<i>Figure 1 The chatbot system design for Line social media platform</i>
+<b>Figure 1</b> The chatbot system design for Line social media platform
 </p>
 
 ## Model Architectures
 &emsp;&emsp;After reviewing the research, we decided on the model architecture shown in Figure 2. Firstly, clean the intent text, then classify the intent into 5 classes (greeting, product information, shop information, purchase order and refund, and comment class) which helps the model respond in the proper way for each class. For each class excluding the comment class, using slots labeling technique by extracting intent information to the common use cases (slots) which varies for each class as shown by the example in Figure 3 For the comment class, use sentiment analysis instead of the slot labeling technique. Finally, retrieving appropriate data from the dataset to answer the intent question. If the question isn't related to the product or business, use ChatGPT to answer it.
 <p align="center">
-<img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/22ce4745e6f758ba4ddc5643f118d60e6348fd96/image/The%20chatbot%20model%20architectures.png" width="600">
+<img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/22ce4745e6f758ba4ddc5643f118d60e6348fd96/image/The%20chatbot%20model%20architectures.png" width="500">
 </p>
 <p align="center">
-<i>Figure 2 The chatbot model architectures</i>
+<b>Figure 2</b> The chatbot model architectures
 </p>
-
-
 
 <p align="center">
 <img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/6b01b7b7b0afbcb48e2ddf270041a8dccb6d55ca/image/The%20example%20of%20slot%20labeling%20of%20product%20information%20class.png" width="600">
 </p>
 <p align="center">
-<i>Figure 3 The example of slots labeling of product information class</i>
+<b>Figure 3</b> The example of slots labeling of product information class
 </p>
 
 The model that is used for each task is as follows:
@@ -67,29 +65,32 @@ The model that is used for each task is as follows:
 </p>
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a) no-augmentation&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(b) augmentation
-<p align="center">
-<i>Figure 4 (a) F1 score of intent classification with no-data augmentation for 100 epochs, (b) F1 score of intent classification with data augmentation for 100 epochs</i>
 </p>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Figure 4** (a) F1 score of intent classification with no-data augmentation for 100 epochs, 
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(b) F1 score of intent classification with data augmentation for 100 epochs
   
-&emsp;&emsp;From the graphs presented, the performance of the intent classification model both with data augmentation and no-data augmentation, the F1 score of the training dataset performs well but poorly on the validation dataset or an overfitting issue occurs of both experiments when the epoch exceeds 40. Therefore, we choose the epoch of 40 to compare the results. However, the F1 score of the validation dataset trend of intent classification with data augmentation is higher than the result with no-data augmentation.
+&emsp;&emsp;From the graphs presented, the performance of the intent classification model both with data augmentation and no-data augmentation, the F1 score of the training dataset performs well but poorly on the validation dataset or an overfitting issue occurs of both experiments when the epoch exceeds 40. Therefore, we choose the epoch of 40 to compare the results. However, the F1 score of the validation dataset trend of intent classification with data augmentation is higher than the result with no-data augmentation. Table 1 shows that both the accuracy and F1 score of the test dataset for the intent classification model with augmentation is higher than the experiment result with no-data augmentation. While the processing time of experiment results with no-augmentation is lower.
 
-_Table 1 the average 3 times of accuracy, f1 score and processing time of test dataset (152 text data) for intent classification with data augmentation and no-data augmentation at 40 epoch_
+**Table 1** the average 3 times of accuracy, f1 score and processing time of test dataset (152 text data) for intent classification with data augmentation and no-data augmentation at 40 epoch
+| results  | no augmentation | augmentation  |
+| ------------- | ------------- | ------------- |
+| accuracy  | 0.8947 ± 0.0093  | 0.9825 ± 0.0031 |
+| F1 score  | 0.8927 ± 0.0110  | 0.9824 ± 0.0031  |
+| processing time |	777 ± 541 ms |	1182 ± 544 ms |
 
-<img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/e93ea0b37a59453dc6ef55307f3fdcf6ac7a5b17/image/intent%20classification%20with%20data%20augmentation%20and%20no-data%20augmentation%20at%2040%20epoch.png" width="600">
+**2) Data Pre-Processing and No-Data Pre-Processing**
 
-&emsp;&emsp;Table 1 shows that both the accuracy and F1 score of the test dataset for the intent classification model with augmentation is higher than the experiment result with no-data augmentation. While the processing time of experiment results with no-augmentation is lower.
+&emsp;&emsp;The slot labeling model performance between using data pre-processing by translate the text into English and no-data pre-processing as shown in Table 2, when applying the translator model, translate from Thai to English before implementing the model. It improves the model performance by increasing both accuracy and F1 score, while the processing time is slower.
 
+**Table 2** the average 3 times of accuracy, f1 score and processing time of slots labelling model with no-data pre-processing and with data pre-processing
+| results  | no pre-processing | pre-processing  |
+| ------------- | ------------- | ------------- |
+| accuracy  | 0.2553 ± 0.0000 |	0.7449 ± 0.0000 |
+| F1 score  | 0.1609 ± 0.0000 |	0.7490 ± 0.0000 |
+| processing time |	6.2100 ± 0.1472 s |	7.8400 ± 1.3789 s |
 
-
-**2) B.	Data Pre-Processing and No-Data Pre-Processing**
-
-&emsp;&emsp;The slot labeling model performance between using data pre-processing by translate the text into English and no-data pre-processing as shown in Table 2.
-
-_Table 2 the average 3 times of accuracy, f1 score and processing time of slots labelling model with no-data pre-processing and with data pre-processing_
-
-<img src="https://github.com/Nidchapan/Closed-Domain-Chatbot/blob/e93ea0b37a59453dc6ef55307f3fdcf6ac7a5b17/image/slots%20labelling%20model%20with%20no-data%20pre-processing%20and%20with%20data%20pre-processing.png" width="600">
-
-&emsp;&emsp;Table 2 shows that, when applying the translator model, translate from Thai to English before implementing the model. It improves the model performance by increasing both accuracy and F1 score, while the processing time is slower.
 
 ## Conclusion and Discussion
 **1)	Data Augmentation and No-Data Augmentation**
