@@ -105,3 +105,15 @@ The model that is used for each task is as follows:
 
 &emsp;&emsp;Our solution is the closed-domain or fashion e-commerce Thai chatbot framework as shown in the previous section. The intent classification technique helps the model respond properly for each input question class, and the slot labeling technique makes the model can respond to the answer for multiple questions at once. To deal with the question that isn't included in the product or business. ChatGPT is implemented for handling it, which overcomes the model's vulnerability.
 
+## Citation
+
+If you find this code useful for your research, please use the following BibTeX entry.
+
+```
+@misc{Nidchapan2023,
+      author = {Nidchapan Nitisukanan and Ekarat Rattagan},
+      title = {Closed-Domain Chatbot for Thai Languge},
+      year = {2023},
+      publisher = {GitHub},
+}
+```
