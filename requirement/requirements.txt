@@ -223,7 +223,7 @@ keras-nlp==0.6.0
 keyring==23.5.0
 khanaa==0.0.6
 kiwisolver==1.4.4
-langchain==0.0.240
+langchain==0.0.329
 langcodes==3.3.0
 langsmith==0.0.14
 launchpadlib==1.10.16
